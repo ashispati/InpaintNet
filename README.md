@@ -25,15 +25,15 @@ The approach followed relies on training a RNN-based architecture to learn to tr
 
 This research work is published as as conference paper at ISMIR, 2019.
 
-> Pati, Ashis, and Lerch, Alexander and Hadjeres, Gaëtan. "Learning to Traverse Latent Spaces for Musical Score Inpaintning" Proc. of the International Society of Music Information Retrieval Conference (ISMIR), Delft, Netherlands, 2019.
+> Ashis Pati, Alexander Lerch, Gaëtan Hadjeres. "Learning to Traverse Latent Spaces for Musical Score Inpaintning", Proc. of the 20th International Society of Music Information Retrieval Conference (ISMIR), Delft, The Netherlands, 2019.
 
 ```
 @inproceedings{pati2017dataset,
   title={Learning to Traverse Latent Spaces for Musical Score Inpaintning},
   author={Pati, Ashis and Lerch, Alexander and Hadjeres, Gaëtan},
-  booktitle={Proc. of the International Society of Music Information Retrieval Conference (ISMIR)},
+  booktitle={Proc. of the 20th International Society of Music Information Retrieval Conference (ISMIR)},
   year={2019},
-  address={Delft, Netherlands}
+  address={Delft, The Netherlands}
 }
 ```
 
