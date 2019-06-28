@@ -20,6 +20,26 @@ The approach followed relies on training a RNN-based architecture to learn to tr
 </center>
 </body>
 
+### Installation and Usage
+Install `anaconda` or `miniconda` by following the instruction [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
+
+Create a new conda environment using the `enviroment.yml` file located in the root folder of this repository. The instructions for the same can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
+
+To install, either download / clone this repository. Open a new terminal, `cd` into the root folder of this repository and run the following command
+
+    pip install -e .
+
+### Contents
+
+The contents of this repository are as follows: 
+* `DatasetManger`: Module for handling data. Not included currently. WILL BE PROVIDED SHORTLY.
+* `AnticipationRNN`: Module implementing model, trainer and tester classes for the AnticipationRNN model. 
+* `MeasureVAE`: Module implementing model, trainer and tester classes for the MeasureVAE model.
+* `LatentRNN`: Module implementing model, trainer and tester classes for the LatentRNN model.
+* `utils`: Module with model and training utility classes and methods
+* other scripts to train / test the models
+
+TO BE UPDATED. 
 
 ### Attribution
 
@@ -39,27 +59,6 @@ This research work is published as as conference paper at ISMIR, 2019.
 
 Please cite the above publication if you are using the code/data in this repository in any manner. 
 
-### Installation and Usage
-Install `anaconda` or `miniconda` by following the instruction [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
-
-Create a new conda environment using the `enviroment.yml` file located in the root folder of this repository. The instructions for the same can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
-
-To install, either download / clone this repository. Open a new terminal, `cd` into the root folder of this repository and run the following command
-
-    pip install -e .
-
-
-### Contents
-
-The contents of this repository are as follows: 
-* `DatasetManger`: Module for handling data. Not included currently. WILL BE PROVIDED SHORTLY.
-* `AnticipationRNN`: Module implementing model, trainer and tester classes for the AnticipationRNN model. 
-* `MeasureVAE`: Module implementing model, trainer and tester classes for the MeasureVAE model.
-* `LatentRNN`: Module implementing model, trainer and tester classes for the LatentRNN model.
-* `utils`: Module with model and training utility classes and methods
-* other scripts to train / test the models
-
-TO BE UPDATED. 
 
 <a name="License"></a>License
 --------------------
