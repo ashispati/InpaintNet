@@ -56,6 +56,7 @@ The contents of this repository are as follows:
 * `AnticipationRNN`: Module implementing model, trainer and tester classes for the AnticipationRNN model. 
 * `MeasureVAE`: Module implementing model, trainer and tester classes for the MeasureVAE model.
 * `LatentRNN`: Module implementing model, trainer and tester classes for the LatentRNN model.
+* `utils`: Module with model and training utility classes and methods
 * other scripts to train / test the models
 
 TO BE UPDATED. 
