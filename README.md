@@ -43,7 +43,7 @@ TO BE UPDATED.
 
 ### Attribution
 
-This research work is published as as conference paper at ISMIR, 2019.
+This research work is published as as conference paper at ISMIR, 2019. Preprint available [here](https://arxiv.org/abs/1907.01164).
 
 > Ashis Pati, Alexander Lerch, Gaëtan Hadjeres. "Learning to Traverse Latent Spaces for Musical Score Inpaintning", Proc. of the 20th International Society for Music Information Retrieval Conference (ISMIR), Delft, The Netherlands, 2019.
 
