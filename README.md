@@ -32,18 +32,18 @@ To install, either download / clone this repository. Open a new terminal, `cd` i
 ### Contents
 
 The contents of this repository are as follows: 
-* `DatasetManger`: Module for handling data. Not included currently. WILL BE PROVIDED SHORTLY.
+* `DatasetManger`: Module for handling data.
 * `AnticipationRNN`: Module implementing model, trainer and tester classes for the AnticipationRNN model. 
 * `MeasureVAE`: Module implementing model, trainer and tester classes for the MeasureVAE model.
 * `LatentRNN`: Module implementing model, trainer and tester classes for the LatentRNN model.
 * `utils`: Module with model and training utility classes and methods
 * other scripts to train / test the models
 
-TO BE UPDATED. 
+OTHER USAGE RELATED STUFF TO BE UPDATED. 
 
 ### Attribution
 
-This research work is published as as conference paper at ISMIR, 2019. Preprint available [here](https://arxiv.org/abs/1907.01164).
+This research work is published as as conference [paper](http://archives.ismir.net/ismir2019/paper/000040.pdf) at ISMIR, 2019. Arxiv Preprint available [here](https://arxiv.org/abs/1907.01164).
 
 > Ashis Pati, Alexander Lerch, Gaëtan Hadjeres. "Learning to Traverse Latent Spaces for Musical Score Inpaintning", Proc. of the 20th International Society for Music Information Retrieval Conference (ISMIR), Delft, The Netherlands, 2019.
 
