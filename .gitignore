@@ -6,7 +6,7 @@ plots/
 saved_midi/
 saved_midi2/
 saved_latent_codes/
-*/raw_data
+raw_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
