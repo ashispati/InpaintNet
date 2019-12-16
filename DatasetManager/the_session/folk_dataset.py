@@ -2,7 +2,6 @@ import torch
 from scipy import stats
 from random import shuffle
 
-import music21
 from music21 import interval
 from torch.utils.data import TensorDataset
 

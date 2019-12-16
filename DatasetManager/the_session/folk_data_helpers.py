@@ -4,7 +4,7 @@ import numpy as np
 from tqdm import tqdm
 from glob2 import glob
 from fractions import Fraction
-from music21 import meter
+import music21
 from music21.abcFormat import ABCHandlerException
 
 from DatasetManager.helpers import *
@@ -66,7 +66,7 @@ def get_notes_in_measure(measure):
     :return:
     """
     notes = measure.flat.notesAndRests
-    notes = [n for n in notes if not isinstance(n, music21.harmony.ChordSymbol)]
+    notes = [n for n in notes if not isinstance(n, harmony.ChordSymbol)]
     return notes
 
 
@@ -77,10 +77,10 @@ def notes_and_chords(score):
     :return:
     """
     notes = score.parts[0].flat.notesAndRests
-    notes = [n for n in notes if not isinstance(n, music21.harmony.ChordSymbol)]
+    notes = [n for n in notes if not isinstance(n, harmony.ChordSymbol)]
     chords = score.parts[0].flat.getElementsByClass(
-        [music21.harmony.ChordSymbol,
-         music21.expressions.TextExpression
+        [harmony.ChordSymbol,
+         expressions.TextExpression
          ])
     return notes, chords
 
@@ -285,7 +285,7 @@ class FolkIteratorGenerator:
             try:
                 score = self.get_score_from_path(tune_filepath)
                 # ignore files with not allowed time signatures
-                ts = score.parts[0].recurse().getElementsByClass(meter.TimeSignature)
+                ts = score.parts[0].recurse().getElementsByClass(music21.meter.TimeSignature)
                 if len(ts) > 1:
                     continue
                 else:
@@ -432,7 +432,7 @@ class FolkIteratorGenerator:
                             fast_note_flag = True
 
             # get time signature
-            ts = score.parts[0].recurse().getElementsByClass(meter.TimeSignature)
+            ts = score.parts[0].recurse().getElementsByClass(music21.meter.TimeSignature)
             if len(ts) > 1:
                 num_multi_ts += 1
             else:
