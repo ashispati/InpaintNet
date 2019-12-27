@@ -7,7 +7,7 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
 from DatasetManager.the_session.folk_dataset import FolkMeasuresDataset, FolkDatasetNBars
-from DatasetManager.data_helpers import START_SYMBOL, END_SYMBOL
+from DatasetManager.helpers import START_SYMBOL, END_SYMBOL
 
 from MeasureVAE.measure_vae import MeasureVAE
 from MeasureVAE.vae_trainer import VAETrainer

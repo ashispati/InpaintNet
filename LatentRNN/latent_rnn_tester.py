@@ -3,7 +3,7 @@ from tqdm import tqdm
 from random import randint
 
 from DatasetManager.the_session.folk_dataset import FolkDatasetNBars
-from DatasetManager.data_helpers import START_SYMBOL, END_SYMBOL
+from DatasetManager.helpers import START_SYMBOL, END_SYMBOL
 from LatentRNN.latent_rnn import LatentRNN
 from LatentRNN.latent_rnn_trainer import *
 from utils.helpers import *
