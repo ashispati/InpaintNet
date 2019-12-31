@@ -1,8 +1,8 @@
+import os
 import torch
-from torch import nn
 
 
-class Model(nn.Module):
+class Model(torch.nn.Module):
     """
     Abstract model class
     """
@@ -18,6 +18,10 @@ class Model(nn.Module):
         Saves the model
         :return: None
         """
+        save_dir = os.path.dirname(self.filepath)
+        # create save directory if needed
+        if not os.path.exists(save_dir):
+            os.mkdir(save_dir)
         torch.save(self.state_dict(), self.filepath)
         print(f'Model {self.__repr__()} saved')
 

@@ -3,9 +3,7 @@ import click
 from DatasetManager.dataset_manager import DatasetManager
 from DatasetManager.the_session.folk_dataset import FolkDataset
 from DatasetManager.metadata import \
-    FermataMetadata, \
     TickMetadata, \
-    KeyMetadata, \
     BeatMarkerMetadata
 from MeasureVAE.measure_vae import MeasureVAE
 from MeasureVAE.vae_trainer import VAETrainer
@@ -36,11 +34,11 @@ from utils.helpers import *
               help='float, amount got dropout prob between decoder RNN layers')
 @click.option('--batch_size', default=256,
               help='training batch size')
-@click.option('--num_epochs', default=5,
+@click.option('--num_epochs', default=30,
               help='number of training epochs')
 @click.option('--train/--test', default=True,
               help='train or retrain the specified model')
-@click.option('--plot/--no_plot', default=True,
+@click.option('--plot/--no_plot', default=False,
               help='plot the training log')
 @click.option('--log/--no_log', default=True,
               help='log the results for tensorboard')
@@ -72,13 +70,13 @@ def main(note_embedding_dim,
     mvae_train_kwargs = {
         'metadatas': metadatas,
         'sequences_size': 32,
-        'num_bars': 1,
+        'num_bars': 16,
         'train': True
     }
     mvae_test_kwargs = {
         'metadatas': metadatas,
         'sequences_size': 32,
-        'num_bars': 1,
+        'num_bars': 16,
         'train': False
     }
     folk_dataset: FolkDataset = dataset_manager.get_dataset(
