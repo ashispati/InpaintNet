@@ -7,6 +7,7 @@ saved_midi/
 saved_midi2/
 saved_latent_codes/
 raw_data/
+dataset_cache/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

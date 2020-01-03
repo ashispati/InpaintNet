@@ -2,9 +2,7 @@ import click
 
 from DatasetManager.dataset_manager import DatasetManager
 from DatasetManager.the_session.folk_dataset import FolkDataset
-from DatasetManager.metadata import \
-    TickMetadata, \
-    BeatMarkerMetadata
+from DatasetManager.metadata import TickMetadata, BeatMarkerMetadata
 from MeasureVAE.measure_vae import MeasureVAE
 from MeasureVAE.vae_trainer import VAETrainer
 from MeasureVAE.vae_tester import VAETester

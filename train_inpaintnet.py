@@ -2,8 +2,7 @@ import click
 
 from DatasetManager.dataset_manager import DatasetManager
 from DatasetManager.the_session.folk_dataset import FolkDataset
-from DatasetManager.metadata import TickMetadata, \
-    BeatMarkerMetadata
+from DatasetManager.metadata import TickMetadata, BeatMarkerMetadata
 from MeasureVAE.measure_vae import MeasureVAE
 from LatentRNN.latent_rnn import LatentRNN
 from LatentRNN.latent_rnn_trainer import LatentRNNTrainer
@@ -41,13 +40,13 @@ from utils.helpers import *
               help='float, amount of dropout prob between measure RNN layers')
 @click.option('--batch_size', default=32,
               help='training batch size')
-@click.option('--num_epochs', default=50,
+@click.option('--num_epochs', default=100,
               help='number of training epochs')
 @click.option('--train/--test', default=True,
               help='train or retrain the specified model')
 @click.option('--lr', default=1e-4,
               help='learning rate')
-@click.option('--plot/--no_plot', default=True,
+@click.option('--plot/--no_plot', default=False,
               help='plot the training log')
 @click.option('--log/--no_log', default=True,
               help='log the results for tensorboard')
@@ -55,7 +54,7 @@ from utils.helpers import *
               help='select if the model should be auto-regressive')
 @click.option('--teacher_forcing/--no_teacher_forcing', default=True,
               help='select if the model should use teacher forcing for training')
-@click.option('--early_stop/--no_early_stop', default=True,
+@click.option('--early_stop/--no_early_stop', default=False,
               help='select if early stopping is to be used')
 def main(note_embedding_dim,
          metadata_embedding_dim,
