@@ -8,7 +8,7 @@ This repository contains the source code and dataset for training a deep learnin
 
 <body>
 <center>
-    <img src=figs/inpainting_block_diagram.png alt="Inpainting Task Schematic" width="500">
+    <img src=figs/inpainting_block_diagram.svg alt="Inpainting Task Schematic" width="500">
 </center>
 </body>
 
@@ -16,7 +16,7 @@ The approach followed relies on training a RNN-based architecture to learn to tr
 
 <body>
 <center>
-    <img src=figs/approach_schematic.png alt="Inpainting Approach Schematic" width="500">
+    <img src=figs/approach_schematic.svg alt="Inpainting Approach Schematic" width="500">
 </center>
 </body>
 
