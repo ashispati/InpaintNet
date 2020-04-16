@@ -6,19 +6,15 @@
 
 This repository contains the source code and dataset for training a deep learning-based model to perform *inpainting* on musical scores, i.e., to connect two musical excerpts in a musically meaningful manner (see figures below for schematics). 
 
-<body>
-<center>
+<p align="center">
     <img src=figs/inpainting_block_diagram.png alt="Inpainting Task Schematic" width="500">
-</center>
-</body>
+</p>
 
 The approach followed relies on training a RNN-based architecture to learn to traverse the latent space of a VAE-based deep generative model.
 
-<body>
-<center>
+<p align="center">
     <img src=figs/approach_schematic.png alt="Inpainting Approach Schematic" width="500">
-</center>
-</body>
+</p>
 
 ### Installation and Usage
 Install `anaconda` or `miniconda` by following the instruction [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
