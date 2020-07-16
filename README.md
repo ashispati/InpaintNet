@@ -35,7 +35,6 @@ The contents of this repository are as follows:
 * `utils`: Module with model and training utility classes and methods
 * other scripts to train / test the models
 
-OTHER USAGE RELATED STUFF TO BE UPDATED. 
 
 ### Attribution
 
