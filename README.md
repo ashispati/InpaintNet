@@ -46,7 +46,7 @@ This research work is published as a conference [paper](http://archives.ismir.ne
 @inproceedings{pati2019inpainting,
   title={Learning to Traverse Latent Spaces for Musical Score Inpaintning},
   author={Pati, Ashis and Lerch, Alexander and Hadjeres, Gaëtan},
-  booktitle={Proc. of the 20th International Society for Music Information Retrieval Conference (ISMIR)},
+  booktitle={20th International Society for Music Information Retrieval Conference (ISMIR)},
   year={2019},
   address={Delft, The Netherlands}
 }
