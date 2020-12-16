@@ -3,9 +3,7 @@ import random
 
 from DatasetManager.dataset_manager import DatasetManager
 from DatasetManager.the_session.folk_dataset import FolkDataset
-from DatasetManager.metadata import FermataMetadata, \
-    TickMetadata, \
-    KeyMetadata, \
+from DatasetManager.metadata import TickMetadata, \
     BeatMarkerMetadata
 from LatentRNN.latent_rnn import *
 from LatentRNN.latent_rnn_tester import *
