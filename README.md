@@ -6,19 +6,15 @@
 
 This repository contains the source code and dataset for training a deep learning-based model to perform *inpainting* on musical scores, i.e., to connect two musical excerpts in a musically meaningful manner (see figures below for schematics). 
 
-<body>
-<center>
+<p align="center">
     <img src=figs/inpainting_block_diagram.png alt="Inpainting Task Schematic" width="500">
-</center>
-</body>
+</p>
 
 The approach followed relies on training a RNN-based architecture to learn to traverse the latent space of a VAE-based deep generative model.
 
-<body>
-<center>
+<p align="center">
     <img src=figs/approach_schematic.png alt="Inpainting Approach Schematic" width="500">
-</center>
-</body>
+</p>
 
 ### Installation and Usage
 Install `anaconda` or `miniconda` by following the instruction [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
@@ -39,11 +35,10 @@ The contents of this repository are as follows:
 * `utils`: Module with model and training utility classes and methods
 * other scripts to train / test the models
 
-OTHER USAGE RELATED STUFF TO BE UPDATED. 
 
 ### Attribution
 
-This research work is published as as conference [paper](http://archives.ismir.net/ismir2019/paper/000040.pdf) at ISMIR, 2019. Arxiv Preprint available [here](https://arxiv.org/abs/1907.01164).
+This research work is published as a conference [paper](http://archives.ismir.net/ismir2019/paper/000040.pdf) at ISMIR, 2019. Arxiv Preprint available [here](https://arxiv.org/abs/1907.01164).
 
 > Ashis Pati, Alexander Lerch, Gaëtan Hadjeres. "Learning to Traverse Latent Spaces for Musical Score Inpaintning", Proc. of the 20th International Society for Music Information Retrieval Conference (ISMIR), Delft, The Netherlands, 2019.
 
@@ -51,7 +46,7 @@ This research work is published as as conference [paper](http://archives.ismir.n
 @inproceedings{pati2019inpainting,
   title={Learning to Traverse Latent Spaces for Musical Score Inpaintning},
   author={Pati, Ashis and Lerch, Alexander and Hadjeres, Gaëtan},
-  booktitle={Proc. of the 20th International Society for Music Information Retrieval Conference (ISMIR)},
+  booktitle={20th International Society for Music Information Retrieval Conference (ISMIR)},
   year={2019},
   address={Delft, The Netherlands}
 }
